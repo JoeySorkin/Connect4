@@ -29,7 +29,6 @@ class Board:
         print(self.board)
 
     def terminal(self, player):
-        """Actual fucking magic i just yoinked from stackoverflow"""
         boardcopy = deepcopy(self.board)
         horizontal_kernel = np.array([[1, 1, 1, 1]])
         vertical_kernel = np.transpose(horizontal_kernel)
